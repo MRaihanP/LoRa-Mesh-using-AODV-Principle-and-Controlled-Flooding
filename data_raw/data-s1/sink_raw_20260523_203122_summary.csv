@@ -1,0 +1,3 @@
+srcIdHex,alias,pkts,lost,lossPct,avgRssi,avgSnr,avgE2ELat,avgLatHop,avgThroughput,avgLinkMargin,avgDistanceM,lastPath,droppedFragments
+DE5C6F,R1,11,3,21.429,-63.364,28.636,1.0,1.0,904.0,60.636,0.0,R1,24
+E21FB5,N1,14,0,0.0,-75.607,16.393,2.643,2.107,415.886,48.393,0.0,N1-R1,24

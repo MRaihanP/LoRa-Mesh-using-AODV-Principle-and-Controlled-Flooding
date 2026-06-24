@@ -1,0 +1,18 @@
+RINGKASAN ANALISIS -- SKENARIO2
+============================================================
+
+-- Event terdeteksi --
+R1 mulai aktif pada t = 1540.00s sejak awal sesi.
+
+-- Durasi tiap fase (N2, deteksi otomatis dari path + ambang link margin) --
+LOS: 1800.0 detik
+recovery: 1080.0 detik
+
+-- PDR per device --
+alias  received  expected  lost  pdr_pct
+   N2        45        47     2    95.74
+   R1        24        24     0   100.00
+
+-- Catatan metodologi --
+Fase LOS/partial/NLOS ditentukan dari ambang linkMargin (LOS > 15 dBm, partial 0-15 dBm, NLOS <= 0 dBm); fase 'recovery' ditentukan dari kolom path yang menunjukkan device sedang melewati R1. Ambang ini adalah heuristik awal dan dapat disesuaikan bila kondisi lapangan berbeda.
+

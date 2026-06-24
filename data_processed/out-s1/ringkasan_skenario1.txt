@@ -1,0 +1,20 @@
+RINGKASAN ANALISIS -- SKENARIO1
+============================================================
+
+-- Event terdeteksi --
+R1 mulai aktif pada t = 770.00s sejak awal sesi.
+Path N1 berpindah ke N1-R1 pada t = 1020.00s sejak awal sesi.
+
+-- PDR per device (CATATAN: PDR tinggi/100% TIDAK menjamin tidak ada masalah -- lihat chart jeda/e2eLat utk kondisi edge communication yang sebenarnya) --
+alias  received  expected  lost  pdr_pct
+   N1        14        14     0   100.00
+   R1        11        14     3    78.57
+
+-- Cross-check delta tsOrigin vs e2eLat (N1) --
+Delta tsOrigin (N1) -- median: 60.00s, maksimum: 360.00s.
+e2eLat (N1) -- median: 2.00s, maksimum: 6.00s.
+
+-- Jumlah slot-miss terdeteksi per device --
+N1: 0 slot-miss
+R1: 1 slot-miss
+

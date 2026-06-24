@@ -1,0 +1,21 @@
+RINGKASAN ANALISIS -- SKENARIO3
+============================================================
+
+-- Event terdeteksi (otomatis dari data) --
+Path N2 sebelum perpindahan: N2-R1
+Path N2 setelah perpindahan: N2
+Relay berhenti kirim pada t = 1260.00s
+Path berpindah (self-healing) pada t = 200.00s
+
+-- Recovery time --
+t_relay_off = 1260s
+t_recovered = 200s
+recovery_time = -1060s
+Catatan: PERINGATAN: path berubah SEBELUM relay terdeteksi mati -- cek deteksi event.
+
+-- PDR per device --
+alias  received  expected  lost  pdr_pct
+   N2        50        50     0    100.0
+   R1        22        22     0    100.0
+   R2        52        52     0    100.0
+

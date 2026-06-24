@@ -1,0 +1,19 @@
+RINGKASAN ANALISIS -- SKENARIO3
+============================================================
+
+-- Event terdeteksi (otomatis dari data) --
+Relay berhenti kirim: tidak terdeteksi
+Path berpindah (self-healing) pada t = 200.00s
+
+-- Recovery time --
+t_relay_off = Nones
+t_recovered = 200s
+recovery_time = Nones
+Catatan: Tidak dapat dihitung -- salah satu/kedua event tidak terdeteksi pada data.
+
+-- PDR per device --
+alias  received  expected  lost  pdr_pct
+   N2        17        17     0    100.0
+   R1        23        23     0    100.0
+   R2        13        13     0    100.0
+

@@ -1,0 +1,32 @@
+RINGKASAN ANALISIS -- SKENARIO4
+============================================================
+
+-- PDR per device --
+alias  received  expected  lost  pdr_pct
+   N1        61        61     0    100.0
+   N2        60        60     0    100.0
+   N3        60        60     0    100.0
+   R1        61        61     0    100.0
+   R2        61        61     0    100.0
+
+-- Jumlah perpindahan path per device --
+N1: 6 kali
+N2: 2 kali
+N3: 8 kali
+R1: 0 kali
+R2: 0 kali
+
+-- Rata-rata RSSI per device (dBm) --
+N1: -78.14
+N2: -69.22
+N3: -74.54
+R1: -74.51
+R2: -67.44
+
+-- Rata-rata throughput per device (bit/s) --
+N1: 912.85
+N2: 380.00
+N3: 416.40
+R1: 904.00
+R2: 904.00
+

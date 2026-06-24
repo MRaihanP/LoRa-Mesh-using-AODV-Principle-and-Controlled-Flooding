@@ -1,0 +1,36 @@
+RINGKASAN ANALISIS -- SKENARIO5
+============================================================
+
+-- Catatan pemotongan data (limitasi metodologis) --
+Jumlah paket asli per device: {'N1': 923, 'N2': 756, 'N3': 936, 'R1': 937, 'R2': 937}
+Semua device dipotong ke 756 paket pertama (mengikuti device dgn paket paling sedikit, akibat kehabisan baterai). Pemotongan berdasarkan JUMLAH PAKET, bukan rentang waktu -- rentang waktu efektif antar device setelah pemotongan dapat sedikit berbeda krn kecepatan kirim tiap device tidak identik.
+
+-- PDR per device (dihitung dari data yang SUDAH dipotong) --
+alias  received  expected  lost  pdr_pct
+   N1       756       756     0    100.0
+   N2       756       756     0    100.0
+   N3       756       756     0    100.0
+   R1       756       756     0    100.0
+   R2       756       756     0    100.0
+
+-- Jumlah perpindahan path per device --
+N1: 2 kali
+N2: 0 kali
+N3: 0 kali
+R1: 2 kali
+R2: 2 kali
+
+-- Rata-rata RSSI per device (dBm) --
+N1: -30.26
+N2: -54.77
+N3: -47.29
+R1: -32.46
+R2: -37.75
+
+-- Rata-rata throughput per device (bit/s) --
+N1: 919.95
+N2: 920.00
+N3: 920.68
+R1: 903.15
+R2: 903.30
+
